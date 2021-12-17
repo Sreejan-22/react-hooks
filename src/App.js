@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import UseReducer from "./pages/UseReducer/UseReducer";
 import UseContenxt from "./pages/UseContext/UseContext";
 import UseMemo from "./pages/UseMemo/UseMemo";
+import ReactMemo from "./pages/ReactMemo/ReactMemo";
 import "./App.css";
 
 const Home = () => {
@@ -16,6 +17,8 @@ const Home = () => {
         <Link to="/usecontext">useContext</Link>
         &nbsp;&nbsp;
         <Link to="/usememo">useMemo</Link>
+        &nbsp;&nbsp;
+        <Link to="/reactmemo">React.memo</Link>
       </div>
     </div>
   );
@@ -30,6 +33,7 @@ function App() {
           <Route path="usereducer" element={<UseReducer />} />
           <Route path="usecontext" element={<UseContenxt />} />
           <Route path="usememo" element={<UseMemo />} />
+          <Route path="reactmemo" element={<ReactMemo />} />
         </Routes>
       </Router>
     </div>
